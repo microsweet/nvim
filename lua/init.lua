@@ -65,6 +65,7 @@ compile = require('compile')
 require('plugins')
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.gopls.setup{}
+require'lspconfig'.clangd.setup{}
 require'complekinds'.setup()
 require'lspinstall'.setup()
 
