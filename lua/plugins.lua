@@ -79,6 +79,7 @@ return require('packer').startup(function()
   use 'sk1418/HowMuch'
 
   use 'gcmt/wildfire.vim'
+  use 'tpope/vim-surround'
 
   -- neovim lsp
   use 'neovim/nvim-lspconfig'
