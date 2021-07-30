@@ -234,6 +234,10 @@ g.indentLine_conceallevel = 2
 -- vim-table-mode conf
 api.nvim_set_keymap('', '<leader>m', ':TableModeToggle<CR>', {noremap = true })
 
+-- vim-easymoion
+api.nvim_set_keymap('', '<leader>f', '<plug>(easymotion-bd-f)', { noremap= false })
+api.nvim_set_keymap('n', '<leader>f', '<plug>(easymotion-overwin-f)', { noremap= false })
+
 -- auto fcitx
 g.input_toggle = 1
 function Fcitx2en()
