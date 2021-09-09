@@ -82,17 +82,20 @@ return require('packer').startup(function()
   use 'tpope/vim-surround'
 
   -- neovim lsp
-  use 'neovim/nvim-lspconfig'
-  use {'hrsh7th/nvim-compe',
-        requires = {
-            {'hrsh7th/vim-vsnip', opt = true }, 
-            {'hrsh7th/vim-vsnip-integ', opt = true }
-        }
-}
-  use 'kabouzeid/nvim-lspinstall'
+  --use 'neovim/nvim-lspconfig'
+  --use {'hrsh7th/nvim-compe',
+        --requires = {
+            --{'hrsh7th/vim-vsnip', opt = true }, 
+            --{'hrsh7th/vim-vsnip-integ', opt = true }
+        --}
+--}
+  --use 'kabouzeid/nvim-lspinstall'
 
   -- translator
-  use 'voldikss/vim-translator'
+  --use 'voldikss/vim-translator'
+
+  -- coc.nvim
+  use {'neoclide/coc.nvim', branch = 'release', run = ':yarn install --forzen-lockfile'}
 
 end)
 
