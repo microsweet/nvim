@@ -56,6 +56,7 @@ api.nvim_set_keymap('v', 'qq', '<ESC>', {noremap = true })
 api.nvim_set_keymap('v', 'Y', '"+y', {noremap = true })
 api.nvim_set_keymap('v', 'mg', 'Imagnet:?xt=urn:btih:<ESC>', {noremap = true })
 api.nvim_set_keymap('n', 'r', '<Cmd>lua compile.CompileRunGcc()<CR>', {noremap = true })
+api.nvim_set_keymap('n', 'fmt', ':call CocAction("format")<CR>', {noremap = true })
 
 cmd[[
     autocmd FileType javascript set ts=2 sts=2 sw=2 et
